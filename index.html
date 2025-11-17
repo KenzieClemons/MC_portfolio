@@ -1,4 +1,4 @@
-<!-- Chosen Palette: Ball State Cardinals (Cardinal Red/Maroon, Light Gray, White) -->
+ie<!-- Chosen Palette: Ball State Cardinals (Cardinal Red/Maroon, Light Gray, White) -->
 <!-- Application Structure Plan: A fixed-sidebar dashboard structure designed for non-linear exploration. The main content is split into five thematic, scrollable sections: 1. Introduction (Persona/Mission), 2. Snapshot Dashboard (Metrics), 3. Academic Foundation (Lists/Charts), 4. Project Showcase (Filterable Cards), and 5. Experience & Recognition (Timelines/Lists). This structure prioritizes immediate delivery of the key personal story before diving into data. -->
 <!-- Visualization & Content Choices:
 1. Report Info -> Introduction (New) -> Goal -> Establish Persona/Connection -> Viz/Presentation Method -> Two-column layout with Profile Image and Mission Statement (HTML/CSS) -> Justification -> Creates instant rapport and communicates goals.
@@ -255,18 +255,18 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 
         // 1.1 PROFILE & BRANDING VARIABLES (REQUIRED)
         const profileData = {
-            studentName: "Riley Cardinal",
-            tagline: "Future-Focused Problem Solver in Digital Media",
-            currentYear: "Sophomore", // Freshman, Sophomore, Junior, Senior
-            major: "Computer Science & Digital Media",
+            studentName: "Mckenzie Clemons",
+            tagline: "Turning data into decisions",
+            currentYear: "Freshman", // Freshman, Sophomore, Junior, Senior
+            major: "Marketing",
             gpa: 3.85,
             impactScoreMultiplier: 10, // Adjusts how much projects/awards count towards total impact
             
             // --- INTRODUCTION & BRANDING FIELDS ---
-            photoUrl: "https://placehold.co/150x150/BA0C2F/FFFFFF/png?text=RILEY+C", // Replace with a URL to a professional headshot
+            photoUrl: "https://raw.githubusercontent.com/KenzieClemons/MC_portfolio/main/images/Profile%20pic.jpeg", // Replace with a URL to a professional headshot
             logoUrl: "https://placehold.co/40x40/BA0C2F/FFFFFF.png?text=BSU", // URL for your school logo or personal brand icon
-            personalBio: "I am a sophomore driven by the intersection of computational thinking and creative design. My academic focus is on building scalable, user-centric web applications and leveraging data analysis to inform design decisions. I believe in continuous learning and applying classroom theory to immediate, impactful real-world challenges.",
-            missionStatement: "To build digital solutions that simplify complex processes and empower small businesses, leveraging Python, front-end frameworks, and a user-first design approach.",
+            personalBio: "Hey! I’m Mckenzie a freshman studying marketing with a big interest in creativity, social media, and brand strategy. I’m focused on my academics while building the skills that will help me thrive in the marketing world. I love learning how brands connect with people and finding new ways to tell stories that stand out.",
+            missionStatement: "My mission is to explore the world of marketing with curiosity, embrace creativity, and develop strategies that help brands tell their stories in authentic and impactful ways.",
         };
 
         /*
@@ -279,52 +279,48 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 
         // 1.2 ACADEMICS (REQUIRED: Add relevant classes)
         const academicData = [
-            { name: "Intro to Python Programming", grade: "A", semester: "Fall 2024", relevance: "Code" },
-            { name: "Digital Design Principles", grade: "A-", semester: "Fall 2024", relevance: "Design" },
-            { name: "Calculus I", grade: "B+", semester: "Fall 2024", relevance: "Foundational" },
-            { name: "Web Development (Front-End)", grade: "A", semester: "Spring 2025", relevance: "Code" },
-            { name: "Data Structures", grade: "In Progress", semester: "Current", relevance: "Code" },
+            { name: "The West of the World", grade: "in progress", semester: "Current", relevance: "History" },
+            { name: "Rhetoric and Writing", grade: "in progress", semester: "Current", relevance: "Research" },
+            { name: "Media and Society", grade: "in progress", semester: "in progress", relevance: "News" },
+            { name: "Business Information Systems", grade: "in progress", semester: "Current", relevance: "Code" },
+            { name: "Intro to Miller College", grade: "In Progress", semester: "Current", relevance: "Business" },
         ];
 
         // 1.3 PROJECTS (REQUIRED: Follow C-S-R format)
         const projectData = [
             {
-                title: "Local Charity Website Redesign",
+                title: "Business proposal project 1",
                 category: "Design",
-                challenge: "The local Humane Society site was not mobile-friendly, resulting in high bounce rates on the donation page.",
-                solution: "Designed and implemented a responsive, user-centered interface using HTML, Tailwind CSS, and vanilla JS.",
-                result: "Increased mobile conversion rate by **15%** and reduced bounce rate by **22%** in the first month.",
-                link: "https://github.com/riley/charity-site"
+                challenge: "A family ran bookstore right off of ball states campus was struggling with the flow of their business due to outdated.",
+                solution: "incorporate a pos system,inventory management and online ordering system.",
+                result: "The business is able to process more orders at a time and keep track of inventory.",
+               
             },
             {
-                title: "Twitter Sentiment Analyzer (Academic)",
-                category: "Code",
-                challenge: "Required to analyze public sentiment towards a political topic using programming tools for a final project.",
-                solution: "Used Python (Pandas/Matplotlib) to clean data and built a basic Naive Bayes classification model.",
-                result: "Achieved **82%** accuracy in classifying positive/negative tweets, earning the highest grade in the class (A).",
+                title: "Analyze song essay",
+                category: "Research",
+                challenge: "analyze the use of ethos,pathos and logos that is used in the song.",
+                solution: "Gather secpndary sources that support my claims.",
+                result: "I was able to fully get my claim across.",
                 link: ""
             },
             {
-                title: "3D Planet Rendering",
-                category: "Code/Personal",
-                challenge: "A personal challenge to learn a new visualization library (three.js) over winter break.",
-                solution: "Created a simple animated model of a rotating planet using three.js, demonstrating coordinate system mastery.",
-                result: "Successfully rendered complex geometry and optimized the animation loop to maintain **60 FPS** on desktop browsers.",
-                link: "https://riley.github.io/planet-render"
+                title: "Mini web page project",
+                category: "Code",
+                challenge: "Create a website to help Cardinal Books furtherexpand their business.",
+                solution: "Build a website for both the businessa nd costumers to shop and track orders.",
+                result: "Made it easier for both sides to run.",
+                
             }
         ];
 
         // 1.4 EXPERIENCE & AWARDS (REQUIRED)
         const recognitionData = {
             experience: [
-                { title: "Team Lead, Ball State Hackathon", type: "Extracurricular", duration: "Oct 2025", detail: "Led a four-person team to develop a functional prototype in **24 hours**." },
-                { title: "Library Volunteer (IT Support)", type: "Community Service", duration: "Jan - May 2025", detail: "Provided **40+ hours** of technical support for public computers and staff devices." },
-            ],
-            awards: [
-                { title: "Dean's List", duration: "Fall 2024", detail: "Achieved a **3.8 GPA**." },
-                { title: "Rising Star Freshman Award", duration: "Spring 2025", detail: "Recognized by the CS department for high academic achievement and engagement." },
-            ]
-        };
+                { title: "Aqua Tots - Indianapolis, IN", type: "Front Desk Receptionist", duration: "May 2024 - August 2024", detail: "Managed high-volume phone calls, directing inquiries to appropriate personnel for prompt resolution.
+Scheduled appointments accurately using reservation software, reducing conflicts or double bookings,Scheduled appointments accurately using reservation software, reducing conflicts or double bookings." },
+                { title: "Aerie By American Eagle - Indianapolis", type: "Brand Ambassador", duration: "February 2023 - May 2023", detail: "Conversed with customers to share information about products and services,Worked promotional events for different products,persuading customers to purchase and documenting sales." },
+           
 
         /* =====================================================================
         | 2. CORE LOGIC (DO NOT EDIT)
@@ -576,4 +572,5 @@ CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     </script>
 </body>
 </html>
+
 
